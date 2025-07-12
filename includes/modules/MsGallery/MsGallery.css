@@ -1,0 +1,53 @@
+:root {
+    --mgfd-grid_column: 4;
+    --mgfd-grid-horizontal-gap: 10px;
+    --mgfd-grid-vertical-gap: 10px;
+    --mgfd-masonry-horizontal-gap: 0;
+    --mgfd-masonry-vertical-gap: 0;
+    --mgfd-height-column: 300px;
+}
+
+.mgfd-ms-gallery-masonry-item img  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-style: solid;
+}
+
+
+.mgfd-ms-gallery-masonry-container {
+    column-count: var(--mgfd-grid_column);
+    column-gap: var(--mgfd-masonry-horizontal-gap);
+}
+
+.mgfd-ms-gallery-masonry-item {
+    break-inside: avoid;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    margin-bottom: var(--mgfd-masonry-vertical-gap);
+}
+
+.mgfd-ms-gallery-masonry-item:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (max-width: 910px) {
+    .mgfd-ms-gallery-masonry-item {
+        --mgfd-grid_column: 3;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .mgfd-ms-gallery-masonry-item {
+        --mgfd-grid_column: 2;
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+    .mgfd-ms-gallery-masonry-item {
+        --mgfd-grid_column: 1;
+    }
+}
