@@ -1,10 +1,10 @@
 === Ms Gallery For Divi Lite ===
-Contributors: deep7197  
+Contributors: deep7197, YuvrajSingh9972
 Tags: divi, gallery, masonry, images, divi-builder
 Requires at least: 5.0  
 Tested up to: 6.8  
 Requires PHP: 7.2  
-Stable tag: 1.0.0  
+Stable tag: 1.0.1  
 License: GPLv2 or later  
 License URI: https://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -84,6 +84,9 @@ The plugin includes default hover effects. You can further customize them using 
 
 == Changelog ==
 
+= 1.0.1 =  
+* Add source link in readme
+
 = 1.0.0 =  
 * Initial release  
 * Masonry layout with responsive column support  
@@ -106,4 +109,4 @@ Developed by Mandeep Singh.
 
 The unminified source code for this plugin’s JavaScript and CSS is available in the /src directory of this plugin.
 If you wish to build the minified files yourself, run `npm install` and `npm run build` in the plugin root.
-For more details, see our GitHub repository: https://github.com/yourusername/your-repo
+For more details, see our GitHub repository: https://github.com/lionecoders/ms-gallery-for-divi-lite

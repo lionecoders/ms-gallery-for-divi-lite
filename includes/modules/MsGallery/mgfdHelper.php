@@ -8,7 +8,7 @@
  *
  * @package MsGalleryForDivi
  * @subpackage Modules
- * @since 1.0.0
+ * @since 1.0.1
  */
 
 // Prevent direct access to this file.
@@ -22,7 +22,7 @@ if (! defined('ABSPATH')) {
  * Contains helper methods for the MS Gallery Divi module including
  * field configurations, styling, and template generation.
  *
- * @since 1.0.0
+ * @since 1.0.1
  */
 class MGFD_Helper
 {
@@ -33,7 +33,7 @@ class MGFD_Helper
      * Returns the configuration array for all module settings fields
      * used in the Divi Builder interface.
      *
-     * @since 1.0.0
+     * @since 1.0.1
      * @return array Array of field configurations for the module settings.
      */
     public static function get_settings_fields()
@@ -118,7 +118,7 @@ class MGFD_Helper
      * Returns the configuration array for advanced module settings
      * including borders and other styling options.
      *
-     * @since 1.0.0
+     * @since 1.0.1
      * @return array Array of advanced field configurations.
      */
     public static function get_advanced_settings_fields()
@@ -154,7 +154,7 @@ class MGFD_Helper
      * Sets CSS custom properties for grid columns, gaps, and overlay colors
      * based on module settings.
      *
-     * @since 1.0.0
+     * @since 1.0.1
      * @param array  $props Module properties containing styling configuration.
      * @param string $render_slug Render slug for CSS targeting.
      * @return void
@@ -219,7 +219,7 @@ class MGFD_Helper
      * Creates the HTML structure for the gallery based on the selected style
      * and gallery data with proper escaping and security measures.
      *
-     * @since 1.0.0
+     * @since 1.0.1
      * @param array  $props Module properties containing gallery configuration.
      * @param string $render_slug Render slug for CSS targeting.
      * @param array  $gallery_data Processed gallery data with image information.
@@ -257,7 +257,7 @@ class MGFD_Helper
      * Returns an array of available WordPress image sizes with their
      * dimensions for use in the module settings.
      *
-     * @since 1.0.0
+     * @since 1.0.1
      * @return array Array of image size options with labels.
      */
     public static function mgfd_image_size_options()
@@ -291,7 +291,7 @@ class MGFD_Helper
      * Fetches image data from WordPress media library based on provided attachment IDs.
      * Sanitizes and validates all data before returning.
      *
-     * @since 1.0.0
+     * @since 1.0.1
      * @param array $props Module properties containing gallery configuration.
      * @return array Processed gallery data with sanitized image information.
      */

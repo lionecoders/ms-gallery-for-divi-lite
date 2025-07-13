@@ -183,6 +183,6 @@ For support and feature requests, please contact the developer or create an issu
 
 ---
 
-**Version**: 1.0.0  
-**Last Updated**: 2024  
+**Version**: 1.0.1  
+**Last Updated**: 13-07-2025 
 **Compatibility**: WordPress 5.0+, Divi 4.0+ 
