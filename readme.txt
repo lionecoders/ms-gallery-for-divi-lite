@@ -103,7 +103,7 @@ Initial release. No upgrade actions required.
 
 == Credits ==
 
-Developed by Mandeep Singh.
+Developed by lionecoders.
 
 == Source Code & Build Process ==
 

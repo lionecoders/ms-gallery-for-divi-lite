@@ -1,9 +1,11 @@
 <?php
 /*
 Plugin Name: Ms Gallery For Divi Lite
+Plugin URI:  https://lionecoders.com
 Description: Fastest way to create responsive masonry galleries for Divi.
 Version:     1.0.1
-Author:      Mandeep Singh
+Author:      LionE Coders
+Author URI:  https://lionecoders.com
 License:     GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: ms-gallery-for-divi-lite
