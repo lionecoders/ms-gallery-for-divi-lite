@@ -63,6 +63,15 @@ class MGFD_Helper
                 'computed_callback'   => ['MGFD_Helper', 'mgfd_gallery_data'],
                 'computed_depends_on' => ['gallery_ids', 'gallery_image_size']
             ],
+           'overlay_content' => array(
+                'label' => esc_html__('Overlay Content', 'ms-gallery-for-divi-lite'),
+                'type' => 'yes_no_button',
+                'options' => array(
+                    'on' => esc_html__('Show', 'ms-gallery-for-divi-lite'),
+                    'off' => esc_html__('Hide', 'ms-gallery-for-divi-lite'),
+                ),
+                'toggle_slug' => 'general',
+            ),
             'gallery_style' => [
                 'label' => __('Gallery Style', 'ms-gallery-for-divi-lite'),
                 'description' => __('Set the style of the gallery.', 'ms-gallery-for-divi-lite'),
@@ -107,8 +116,24 @@ class MGFD_Helper
                     'step' => 1
                 ],
                 'default' => '10px',
-                'toggle_slug' => 'general',
-            ]
+                'toggle_slug' => 'general'
+            ],
+            'overlay_color' => array(
+                'label' => esc_html__('Overlay Color', 'ms-gallery-for-divi-lite'),
+                'type' => 'color-alpha',
+                'description' => esc_html__('Overlay color.', 'ms-gallery-for-divi-lite'),
+                'toggle_slug' => 'image_style',
+                'tab_slug' => 'advanced',
+                'default' => 'rgba(0, 0, 0, 0.6)'
+            ),
+            'overlay_text_color' => array(
+                'label' => esc_html__('Overlay Text Color', 'ms-gallery-for-divi-lite'),
+                'type' => 'color-alpha',
+                'description' => esc_html__('Overlay text color.', 'ms-gallery-for-divi-lite'),
+                'toggle_slug' => 'image_style',
+                'tab_slug' => 'advanced',
+                'default' => '#ffffff'
+            ),
         );
     }
 
@@ -210,6 +235,26 @@ class MGFD_Helper
             );
         }
 
+        if ($props['overlay_color'] !== '') {
+            ET_Builder_Element::set_style(
+                $render_slug,
+                array(
+                    'selector'    => '%%order_class%% .mgfd-ms-gallery-overlay-content',
+                    'declaration' => sprintf('--mgfd-overlay-color: %1$s !important;', $props['overlay_color'])
+                )
+            );
+        }
+
+        if ($props['overlay_text_color'] !== '') {
+            ET_Builder_Element::set_style(
+                $render_slug,
+                array(
+                    'selector'    => '%%order_class%% .mgfd-ms-gallery-overlay-content',
+                    'declaration' => sprintf('--mgfd-overlay-text-color: %1$s !important;', $props['overlay_text_color'])
+                )
+            );
+        }
+
 
     }
 
@@ -242,6 +287,13 @@ class MGFD_Helper
                 'alt'   => esc_attr($item['alt']),
             ]);
             $output .= '</a>';
+            if ($props['overlay_content'] === 'on') {
+                $output .= '<div class="mgfd-ms-gallery-overlay-content">';
+                $output .= '<h3>' . esc_html($item['title']) . '</h3>';
+                $output .= '<p>' . esc_html($item['description']) . '</p>';
+                $output .= '<p>' . esc_html($item['caption']) . '</p>';
+                $output .= '</div>';
+            }
             $output .= '</div>';
         }        
 

@@ -6,7 +6,8 @@ export const MGFD_gallery_style = (props) => {
     grid_column_gap,
     grid_row_gap,
     gallery_style,
-    accordion_overlay_color
+    overlay_color,
+    overlay_text_color
   } = props;
 
   if (grid_column !== undefined && grid_column !== '') {
@@ -73,16 +74,27 @@ export const MGFD_gallery_style = (props) => {
     )
   }
 
-  if (accordion_overlay_color !== undefined && accordion_overlay_color !== '') {
+  if (overlay_color !== undefined && overlay_color !== '') {
+
     mgfd_style.push(
       [
         {
-          selector: '%%order_class%% .mgfd-ms-gallery-accordion-item::before',
-          declaration: `--mgfd-accordion-overlay-color: ${accordion_overlay_color} !important`,
+          selector: '%%order_class%% .mgfd-ms-gallery-overlay-content',
+          declaration: `--mgfd-overlay-color: ${overlay_color} !important`,
         }
       ]
     )
   }
 
+  if (overlay_text_color !== undefined && overlay_text_color !== '') {
+    mgfd_style.push(
+      [
+        {
+          selector: '%%order_class%% .mgfd-ms-gallery-overlay-content',
+          declaration: `--mgfd-overlay-text-color: ${overlay_text_color} !important`,
+        }
+      ]
+    )
+  }
   return mgfd_style;
 }

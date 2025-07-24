@@ -1,11 +1,11 @@
-# Copyright (C) 2025 Mandeep Singh
+# Copyright (C) 2025 LionE Coders
 # This file is distributed under the GPL2.
 msgid ""
 msgstr ""
-"Project-Id-Version: Ms Gallery For Divi Lite 1.0.0\n"
+"Project-Id-Version: Ms Gallery For Divi Lite 1.0.1\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/ms-gallery-for-divi-lite\n"
-"POT-Creation-Date: 2025-07-01 19:13:35+00:00\n"
+"POT-Creation-Date: 2025-07-22 16:49:48+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -54,42 +54,70 @@ msgid "Set the size of the image."
 msgstr ""
 
 #: includes/modules/MsGallery/mgfdHelper.php:67
-msgid "Gallery Style"
+msgid "Overlay Content"
 msgstr ""
 
-#: includes/modules/MsGallery/mgfdHelper.php:68
-msgid "Set the style of the gallery."
+#: includes/modules/MsGallery/mgfdHelper.php:70
+msgid "Show"
 msgstr ""
 
-#: includes/modules/MsGallery/mgfdHelper.php:75
-msgid "Grid Column"
+#: includes/modules/MsGallery/mgfdHelper.php:71
+msgid "Hide"
 msgstr ""
 
 #: includes/modules/MsGallery/mgfdHelper.php:76
+msgid "Gallery Style"
+msgstr ""
+
+#: includes/modules/MsGallery/mgfdHelper.php:77
+msgid "Set the style of the gallery."
+msgstr ""
+
+#: includes/modules/MsGallery/mgfdHelper.php:84
+msgid "Grid Column"
+msgstr ""
+
+#: includes/modules/MsGallery/mgfdHelper.php:85
 msgid "Set the number of columns."
 msgstr ""
 
-#: includes/modules/MsGallery/mgfdHelper.php:87
+#: includes/modules/MsGallery/mgfdHelper.php:96
 msgid "Column Gap"
 msgstr ""
 
-#: includes/modules/MsGallery/mgfdHelper.php:88
+#: includes/modules/MsGallery/mgfdHelper.php:97
 msgid "Set the gap between the columns."
 msgstr ""
 
-#: includes/modules/MsGallery/mgfdHelper.php:100
+#: includes/modules/MsGallery/mgfdHelper.php:109
 msgid "Row Gap"
 msgstr ""
 
-#: includes/modules/MsGallery/mgfdHelper.php:101
+#: includes/modules/MsGallery/mgfdHelper.php:110
 msgid "Set the gap between the rows."
 msgstr ""
 
-#: includes/modules/MsGallery/mgfdHelper.php:135
+#: includes/modules/MsGallery/mgfdHelper.php:122
+msgid "Overlay Color"
+msgstr ""
+
+#: includes/modules/MsGallery/mgfdHelper.php:124
+msgid "Overlay color."
+msgstr ""
+
+#: includes/modules/MsGallery/mgfdHelper.php:130
+msgid "Overlay Text Color"
+msgstr ""
+
+#: includes/modules/MsGallery/mgfdHelper.php:132
+msgid "Overlay text color."
+msgstr ""
+
+#: includes/modules/MsGallery/mgfdHelper.php:160
 msgid "Items"
 msgstr ""
 
-#: includes/modules/MsGallery/mgfdHelper.php:283
+#: includes/modules/MsGallery/mgfdHelper.php:335
 msgid "Full"
 msgstr ""
 
@@ -97,10 +125,14 @@ msgstr ""
 msgid "Ms Gallery For Divi Lite"
 msgstr ""
 
+#. Author URI of the plugin/theme
+msgid "https://lionecoders.com"
+msgstr ""
+
 #. Description of the plugin/theme
 msgid "Fastest way to create responsive masonry galleries for Divi."
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Mandeep Singh"
+msgid "LionE Coders"
 msgstr ""
