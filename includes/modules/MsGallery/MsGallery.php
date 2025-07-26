@@ -4,12 +4,12 @@
  *
  * @package MsGalleryForDivi
  * @subpackage Modules
- * @since 1.0.1
+ * @since 1.0.2
  *
  * @wordpress-plugin
  * Plugin Name: MS Gallery for Divi
  * Description: A custom Divi module for creating beautiful image galleries
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Mandeep Singh
  * License: GPL v2 or later
  * Text Domain: ms-gallery-for-divi-lite
@@ -28,14 +28,14 @@ require_once 'mgfdHelper.php';
  * Custom Divi Builder module for creating image galleries with various display styles.
  * Extends ET_Builder_Module to integrate with Divi's module system.
  *
- * @since 1.0.1
+ * @since 1.0.2
  */
 class MGFD_MsGallery extends ET_Builder_Module {
 
 	/**
 	 * Module slug for Divi Builder
 	 *
-	 * @since 1.0.1
+	 * @since 1.0.2
 	 * @var string
 	 */
 	public $slug = 'mgfd_ms_gallery';
@@ -43,7 +43,7 @@ class MGFD_MsGallery extends ET_Builder_Module {
 	/**
 	 * Visual Builder support flag
 	 *
-	 * @since 1.0.1
+	 * @since 1.0.2
 	 * @var string
 	 */
 	public $vb_support = 'on';
@@ -51,7 +51,7 @@ class MGFD_MsGallery extends ET_Builder_Module {
 	/**
 	 * Module credits information
 	 *
-	 * @since 1.0.1
+	 * @since 1.0.2
 	 * @var array
 	 */
 	protected $module_credits = array(
@@ -63,7 +63,7 @@ class MGFD_MsGallery extends ET_Builder_Module {
 	 *
 	 * Sets up the module name and settings modal toggles for the Divi Builder interface.
 	 *
-	 * @since 1.0.1
+	 * @since 1.0.2
 	 * @return void
 	 */
 	public function init() {
@@ -87,7 +87,7 @@ class MGFD_MsGallery extends ET_Builder_Module {
 	 *
 	 * Retrieves the settings fields from the helper class.
 	 *
-	 * @since 1.0.1
+	 * @since 1.0.2
 	 * @return array Module fields configuration
 	 */
 	public function get_fields() {
@@ -99,7 +99,7 @@ class MGFD_MsGallery extends ET_Builder_Module {
 	 *
 	 * Retrieves the advanced settings fields from the helper class.
 	 *
-	 * @since 1.0.1
+	 * @since 1.0.2
 	 * @return array Advanced fields configuration
 	 */
 	public function get_advanced_fields_config() {
@@ -112,7 +112,7 @@ class MGFD_MsGallery extends ET_Builder_Module {
 	 * Generates the HTML output for the gallery module with proper escaping
 	 * and security measures.
 	 *
-	 * @since 1.0.1
+	 * @since 1.0.2
 	 * @param array  $attrs Module attributes.
 	 * @param string $content Module content (unused).
 	 * @param string $render_slug Render slug for CSS targeting.

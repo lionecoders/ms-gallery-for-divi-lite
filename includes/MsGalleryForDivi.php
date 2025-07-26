@@ -9,7 +9,7 @@ class MGFD_MsGalleryForDivi extends DiviExtension {
 	/**
 	 * The gettext domain for the extension's translations.
 	 *
-	 * @since 1.0.1
+	 * @since 1.0.2
 	 *
 	 * @var string
 	 */
@@ -18,7 +18,7 @@ class MGFD_MsGalleryForDivi extends DiviExtension {
 	/**
 	 * The extension's WP Plugin name.
 	 *
-	 * @since 1.0.1
+	 * @since 1.0.2
 	 *
 	 * @var string
 	 */
@@ -27,11 +27,11 @@ class MGFD_MsGalleryForDivi extends DiviExtension {
 	/**
 	 * The extension's version
 	 *
-	 * @since 1.0.1
+	 * @since 1.0.2
 	 *
 	 * @var string
 	 */
-	public $version = '1.0.1';
+	public $version = '1.0.2';
 
 	/**
 	 * MGFD_MsGalleryForDivi constructor.

@@ -70,12 +70,12 @@ ms-gallery-for-divi-lite/
 ├── includes/
 │   ├── MsGalleryForDivi.php          # Main extension class
 │   ├── modules/
-│   │   └── MsGallery/
-│   │       ├── MsGallery.php         # PHP module class
-│   │       ├── MsGallery.jsx         # React component
-│   │       ├── MsGallery.css         # Styles
-│   │       └── mgfdHelper.php        # Helper functions
-│   └── fields/                       # Custom field components
+│       └── MsGallery/
+│           ├── MsGallery.php         # PHP module class
+│           ├── MsGallery.jsx         # React component
+│           ├── MsGallery.css         # Styles
+│           └── mgfdHelper.php        # Helper functions
+│                        # Custom field components
 ├── scripts/                          # Built JavaScript files
 ├── styles/                           # Built CSS files
 └── languages/                        # Translation files
@@ -183,6 +183,6 @@ For support and feature requests, please contact the developer or create an issu
 
 ---
 
-**Version**: 1.0.1  
-**Last Updated**: 13-07-2025 
+**Version**: 1.0.2  
+**Last Updated**: 25-07-2025 
 **Compatibility**: WordPress 5.0+, Divi 4.0+ 
