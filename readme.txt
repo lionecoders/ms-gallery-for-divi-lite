@@ -1,5 +1,5 @@
 === Ms Gallery For Divi Lite ===
-Contributors: deep7197, YuvrajSingh9972
+Contributors: deep7197
 Tags: divi, gallery, masonry, images, divi-builder
 Requires at least: 5.0  
 Tested up to: 6.8  
