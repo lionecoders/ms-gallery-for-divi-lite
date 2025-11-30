@@ -4,6 +4,7 @@ if(!defined('ABSPATH')){
 	exit('Direct script access denied.');
 }
 
+if ( ! class_exists( 'MGFD_MsGalleryForDivi' ) ) {
 class MGFD_MsGalleryForDivi extends DiviExtension {
 
 	/**
@@ -31,7 +32,7 @@ class MGFD_MsGalleryForDivi extends DiviExtension {
 	 *
 	 * @var string
 	 */
-	public $version = '1.0.2';
+	public $version = MGFDL_PLUGIN_VERSION;
 
 	/**
 	 * MGFD_MsGalleryForDivi constructor.
@@ -46,5 +47,5 @@ class MGFD_MsGalleryForDivi extends DiviExtension {
 		parent::__construct( $name, $args );
 	}
 }
-
+}
 new MGFD_MsGalleryForDivi;
