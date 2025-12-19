@@ -14,7 +14,7 @@ The fastest way to create responsive masonry galleries for Divi with customizabl
 
 **Ms Gallery For Divi Lite** is a lightweight and powerful plugin that adds a stunning masonry gallery module to the Divi Builder. Create Pinterest-style responsive image galleries with ease—complete with customizable layouts, image sizes, and elegant hover effects.
 
-**✨ Key Features:**
+** Key Features:**
 
 - **Masonry Layout** – Create Pinterest-style responsive galleries with varying image heights  
 - **Divi Builder Integration** – Works natively with the Divi Visual Builder  
@@ -26,14 +26,14 @@ The fastest way to create responsive masonry galleries for Divi with customizabl
 - **Performance Optimized** – Lightweight and fast-loading frontend  
 - **Easy Image Selection** – Pick images from the WordPress Media Library  
 
-**📱 Responsive Layouts:**  
+** Responsive Layouts:**  
 
 - **Desktop**: Up to 5 columns  
 - **Tablet (≥910px)**: 3 columns  
 - **Mobile (≥768px)**: 2 columns  
 - **Small Mobile (<575px)**: 1 column  
 
-**🎯 Perfect For:**  
+** Perfect For:**  
 
 - Photography portfolios  
 - Product showcases  
