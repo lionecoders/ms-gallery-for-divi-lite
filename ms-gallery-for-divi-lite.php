@@ -25,7 +25,7 @@ You should have received a copy of the GNU General Public License
 along with Ms Gallery For Divi Lite. If not, see https://www.gnu.org/licenses/gpl-2.0.html.
 */
 
-if(!defined('ABSPATH')){
+if (!defined('ABSPATH')) {
 	exit('Direct script access denied.');
 }
 
@@ -38,6 +38,7 @@ class MsGalleryForDiviLite
 
 	public function __construct()
 	{
+		self::include();
 		add_action('divi_extensions_init', array($this, 'mgfdl_initialize_extension'));
 	}
 
@@ -48,7 +49,14 @@ class MsGalleryForDiviLite
 	 */
 	public function mgfdl_initialize_extension()
 	{
-		require_once MGFDL_PLUGIN_DIR . 'includes/MsGalleryForDivi.php';
+		if (defined('ET_BUILDER_VERSION')) {
+			// require_once MGFDL_PLUGIN_DIR . 'includes/MsGalleryForDivi.php';
+		}
+	}
+
+	public static function include()
+	{
+		require_once MGFDL_PLUGIN_DIR . 'divi-5/divi-5.php';
 	}
 }
 new MsGalleryForDiviLite();

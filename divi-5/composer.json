@@ -1,0 +1,9 @@
+{
+    "name": "mgfdl/ms-gallery-for-divi-lite",
+    "autoload": {
+      "psr-4": {
+        "MGFDL\\Modules\\": "server/Modules/"
+      }
+    },
+    "require": {}
+  }

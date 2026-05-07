@@ -1,0 +1,49 @@
+{
+  "name": "mgfdl/ms-gallery-for-divi-lite",
+  "d4Shortcode": "ms-gallery-for-divi",
+  "title": "MS Gallery for Divi Lite",
+  "titles": "MS Gallery for Divi",
+  "category": "module",
+  "attributes": {
+    "module": {
+      "type": "object",
+      "selector": "{{selector}}"
+    },
+    "image_style": {
+      "type": "object",
+      "selector": "{{selector}} .mgfd-ms-gallery-masonry-item img"
+    },
+    "gallery_image_size": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": "full" 
+        }
+      }
+    },
+    "gallery_style": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value":  "grid" 
+        }
+      }
+    },
+    "gallery_image_link": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value":  "none" 
+        }
+      }
+    },
+    "grid_column": {
+      "type": "number",
+      "default": {
+        "desktop": {
+          "value":  3 
+        }
+      }
+    }
+  }
+}

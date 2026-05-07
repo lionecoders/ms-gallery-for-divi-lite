@@ -29,3 +29,5 @@ yarn-debug.log*
 yarn-error.log*
 *.zip
 ms-gallery-for-divi.zip
+divi-5/composer.lock
+/divi-5/visual-builder/node_modules
