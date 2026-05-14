@@ -16,52 +16,52 @@ export const ModuleStyles = ({
   noStyleTag
 }) => (
   <StyleContainer mode={mode} state={state} noStyleTag={noStyleTag}>
-     <CommonStyle
+    <CommonStyle
       selector={`${orderClass} .mgfd-gallery-wrapper img`}
       attr={attrs?.image_object_fit?.desktop?.value}
       declarationFunction={(attrs) => {
-        const data = attrs?.attrValue?.image_object_fit
+        const data = attrs?.attrValue?.image_object_fit ?? attrs?.attrValue
         return `--mgfd-image-object-fit: ${data};`;
       }}
     />
-     <CommonStyle
+    <CommonStyle
       selector={`${orderClass} .mgfd-ms-gallery-masonry-container`}
       attr={attrs?.grid_column}
       declarationFunction={(attrs) => {
-        const data = attrs?.attrValue?.grid_column
+        const data = attrs?.attrValue?.grid_column ?? attrs?.attrValue
         return `--mgfd-grid_column: ${data};`;
       }}
     />
-     <CommonStyle
+    <CommonStyle
       selector={`${orderClass} .mgfd-ms-gallery-masonry-container`}
       attr={attrs?.grid_column_gap}
       declarationFunction={(attrs) => {
         console.log(attrs);
-        const data = attrs?.attrValue?.grid_column_gap
+        const data = attrs?.attrValue?.grid_column_gap ?? attrs?.attrValue
         return `--mgfd-masonry-horizontal-gap: ${data};`;
       }}
     />
-     <CommonStyle
+    <CommonStyle
       selector={`${orderClass} .mgfd-ms-gallery-masonry-container`}
       attr={attrs?.grid_row_gap}
       declarationFunction={(attrs) => {
-        const data = attrs?.attrValue?.grid_row_gap
+        const data = attrs?.attrValue?.grid_row_gap ?? attrs?.attrValue
         return `--mgfd-masonry-vertical-gap: ${data};`;
       }}
     />
-     <CommonStyle
+    <CommonStyle
       selector={`${orderClass} .mgfd-ms-gallery-overlay-content`}
       attr={attrs?.overlay_color}
       declarationFunction={(attrs) => {
-        const data = attrs?.attrValue?.overlay_color
+        const data = attrs?.attrValue?.overlay_color ?? attrs?.attrValue
         return `--mgfd-overlay-color: ${data};`;
       }}
     />
-     <CommonStyle
+    <CommonStyle
       selector={`${orderClass} .mgfd-ms-gallery-overlay-content`}
       attr={attrs?.overlay_text_color}
       declarationFunction={(attrs) => {
-        const data = attrs?.attrValue?.overlay_text_color
+        const data = attrs?.attrValue?.overlay_text_color ?? attrs?.attrValue
         return `--mgfd-overlay-text-color: ${data};`;
       }}
     />

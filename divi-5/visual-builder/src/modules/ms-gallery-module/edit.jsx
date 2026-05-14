@@ -8,16 +8,15 @@ const { useFetch } = window?.divi?.rest;
 const { ModuleContainer } = window?.divi?.module;
 
 
-export const mgfdMsGalleryEdit = ({
-  attrs,
-  elements,
-  id,
-  name,
-}) => {
+export const mgfdMsGalleryEdit = (props) => {
+
+  console.log(props);
+
+  const { attrs, elements, id, name, } = props;
 
   const { fetch, response, isLoading } = useFetch('');
 
-  const gallery_ids = attrs?.gallery_ids?.desktop?.value;
+  const gallery_ids = getAttrByMode(attrs?.gallery_ids) ?? '';
   const gallery_image_size = getAttrByMode(attrs?.gallery_image_size) ?? 'full';
   const overlay_content = getAttrByMode(attrs?.overlay_content) ?? 'off';
 
@@ -36,8 +35,7 @@ export const mgfdMsGalleryEdit = ({
     });
   }, [gallery_ids, gallery_image_size]);
 
- console.log( response?.data);
- const gallery_data = response?.data?? [];
+  const gallery_data = response?.data ?? [];
 
   return (
     <ModuleContainer
