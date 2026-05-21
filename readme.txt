@@ -85,7 +85,7 @@ The plugin includes default hover effects. You can further customize them using 
 5. Mobile-optimized gallery view  
 
 == Changelog ==
-= 1.0.3 =  
+= 1.0.4 =  
 * Tested Upto WordPress Version 7.0
 
 = 1.0.3 =  
