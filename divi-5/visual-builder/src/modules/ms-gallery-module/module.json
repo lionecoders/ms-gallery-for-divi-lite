@@ -25,7 +25,7 @@
       "type": "object",
       "default": {
         "desktop": {
-          "value": "grid"
+          "value": "masonry"
         }
       }
     },
@@ -50,6 +50,54 @@
       "default": {
         "desktop": {
           "value": "on"
+        }
+      }
+    },
+    "overlay_color": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": {
+            "decoration": {
+              "backgroundColor": "#00000099"
+            }
+          }
+        }
+      }
+    },
+    "overlay_text_color": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": {
+            "decoration": {
+              "color": "#00000099"
+            }
+          }
+        }
+      }
+    },
+    "gallery_ids": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": []
+        }
+      }
+    },
+    "grid_row_gap": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": "10"
+        }
+      }
+    },
+    "grid_column_gap": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "value": "10"
         }
       }
     }
