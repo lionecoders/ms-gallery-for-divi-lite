@@ -7,4 +7,15 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'MGFDL\\Modules\\RESTRegistration' => $baseDir . '/server/Modules/RESTRegistration.php',
+    'MGFDL\\Modules\\msGalleryModule\\MGFD_MsGallery' => $baseDir . '/server/Modules/msGalleryModule/MGFD_MsGallery.php',
+    'MGFDL\\Modules\\msGalleryModule\\msGalleryModuleController' => $baseDir . '/server/Modules/msGalleryModule/msGalleryModuleController.php',
+    'MGFDL\\Modules\\msGalleryModule\\msGalleryModuleTraits\\CustomCssTrait' => $baseDir . '/server/Modules/msGalleryModule/msGalleryModuleTraits/CustomCssTrait.php',
+    'MGFDL\\Modules\\msGalleryModule\\msGalleryModuleTraits\\ModuleClassnamesTrait' => $baseDir . '/server/Modules/msGalleryModule/msGalleryModuleTraits/ModuleClassnamesTrait.php',
+    'MGFDL\\Modules\\msGalleryModule\\msGalleryModuleTraits\\ModuleDataTrait' => $baseDir . '/server/Modules/msGalleryModule/msGalleryModuleTraits/ModuleDataTrait.php',
+    'MGFDL\\Modules\\msGalleryModule\\msGalleryModuleTraits\\ModuleScriptDataTrait' => $baseDir . '/server/Modules/msGalleryModule/msGalleryModuleTraits/ModuleScriptDataTrait.php',
+    'MGFDL\\Modules\\msGalleryModule\\msGalleryModuleTraits\\ModuleStylesTrait' => $baseDir . '/server/Modules/msGalleryModule/msGalleryModuleTraits/ModuleStylesTrait.php',
+    'MGFDL\\Modules\\msGalleryModule\\msGalleryModuleTraits\\RenderCallbackTrait' => $baseDir . '/server/Modules/msGalleryModule/msGalleryModuleTraits/RenderCallbackTrait.php',
+    'MGFDL\\Modules\\msGalleryModule\\msGalleryModuleTraits\\RenderContentTrait' => $baseDir . '/server/Modules/msGalleryModule/msGalleryModuleTraits/RenderContentTrait.php',
+    'MGFDL\\Modules\\msGalleryModule\\msGalleryModuleTraits\\mgfdHelper' => $baseDir . '/server/Modules/msGalleryModule/msGalleryModuleTraits/mgfdHelper.php',
 );

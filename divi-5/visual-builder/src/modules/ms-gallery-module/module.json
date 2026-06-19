@@ -1,8 +1,8 @@
 {
-  "name": "mgfdl/ms-gallery-for-divi-lite",
-  "d4Shortcode": "ms-gallery-for-divi",
-  "title": "MS Gallery for Divi Lite",
-  "titles": "MS Gallery for Divi Lite",
+  "name": "mgfd/ms-gallery-for-divi",
+  "d4Shortcode": "mgfd_ms_gallery",
+  "title": "MS Gallery",
+  "titles": "MS Gallerys",
   "category": "module",
   "attributes": {
     "module": {

@@ -26,7 +26,7 @@ class ConversionOutlineJsonPlugin {
       "ConversionOutlineJsonPlugin",
       (params, callback) => {
         const searchPattern =
-          "src/components/**/conversion-outline.ts";
+          "src/modules/**/conversion-outline.{js,jsx}";
 
         // Use the `glob` package to search for `conversion-outline.ts` files.
         try {

@@ -20,7 +20,7 @@ use MGFDL\Modules\msGalleryModule\msGalleryModuleTraits;
  *
  * @package MGFD\Modules\msGalleryModule
  */
-class msGalleryModule implements DependencyInterface {
+class MGFD_MsGallery implements DependencyInterface {
 
   use msGalleryModuleTraits\RenderCallbackTrait;
   use msGalleryModuleTraits\RenderContentTrait;
@@ -37,7 +37,7 @@ class msGalleryModule implements DependencyInterface {
         ModuleRegistration::register_module(
           $module_json_folder_path,
           [
-            'render_callback' => [ msGalleryModule::class, 'render_callback' ],
+            'render_callback' => [ MGFD_MsGallery::class, 'render_callback' ],
           ]
         );
       }

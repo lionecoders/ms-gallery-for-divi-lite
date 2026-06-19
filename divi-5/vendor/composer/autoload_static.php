@@ -22,6 +22,17 @@ class ComposerStaticInitc194c023846e5a62a3596de3d5ce45f6
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'MGFDL\\Modules\\RESTRegistration' => __DIR__ . '/../..' . '/server/Modules/RESTRegistration.php',
+        'MGFDL\\Modules\\msGalleryModule\\MGFD_MsGallery' => __DIR__ . '/../..' . '/server/Modules/msGalleryModule/MGFD_MsGallery.php',
+        'MGFDL\\Modules\\msGalleryModule\\msGalleryModuleController' => __DIR__ . '/../..' . '/server/Modules/msGalleryModule/msGalleryModuleController.php',
+        'MGFDL\\Modules\\msGalleryModule\\msGalleryModuleTraits\\CustomCssTrait' => __DIR__ . '/../..' . '/server/Modules/msGalleryModule/msGalleryModuleTraits/CustomCssTrait.php',
+        'MGFDL\\Modules\\msGalleryModule\\msGalleryModuleTraits\\ModuleClassnamesTrait' => __DIR__ . '/../..' . '/server/Modules/msGalleryModule/msGalleryModuleTraits/ModuleClassnamesTrait.php',
+        'MGFDL\\Modules\\msGalleryModule\\msGalleryModuleTraits\\ModuleDataTrait' => __DIR__ . '/../..' . '/server/Modules/msGalleryModule/msGalleryModuleTraits/ModuleDataTrait.php',
+        'MGFDL\\Modules\\msGalleryModule\\msGalleryModuleTraits\\ModuleScriptDataTrait' => __DIR__ . '/../..' . '/server/Modules/msGalleryModule/msGalleryModuleTraits/ModuleScriptDataTrait.php',
+        'MGFDL\\Modules\\msGalleryModule\\msGalleryModuleTraits\\ModuleStylesTrait' => __DIR__ . '/../..' . '/server/Modules/msGalleryModule/msGalleryModuleTraits/ModuleStylesTrait.php',
+        'MGFDL\\Modules\\msGalleryModule\\msGalleryModuleTraits\\RenderCallbackTrait' => __DIR__ . '/../..' . '/server/Modules/msGalleryModule/msGalleryModuleTraits/RenderCallbackTrait.php',
+        'MGFDL\\Modules\\msGalleryModule\\msGalleryModuleTraits\\RenderContentTrait' => __DIR__ . '/../..' . '/server/Modules/msGalleryModule/msGalleryModuleTraits/RenderContentTrait.php',
+        'MGFDL\\Modules\\msGalleryModule\\msGalleryModuleTraits\\mgfdHelper' => __DIR__ . '/../..' . '/server/Modules/msGalleryModule/msGalleryModuleTraits/mgfdHelper.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

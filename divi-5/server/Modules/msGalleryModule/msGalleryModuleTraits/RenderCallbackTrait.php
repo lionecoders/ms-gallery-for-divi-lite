@@ -5,16 +5,17 @@ if (!defined('ABSPATH')) {
   die('Direct access forbidden.');
 }
 
-use MGFDL\Modules\msGalleryModule\msGalleryModule;
+use MGFDL\Modules\msGalleryModule\MGFD_MsGallery;
 use ET\Builder\Packages\Module\Module;
 use ET\Builder\Framework\Utility\HTMLUtility;
 
 trait RenderCallbackTrait
 {
+  use mgfdHelper;
 
   public static function render_callback($attrs, $content, $block, $elements)
   {
-    $props = mgfdHelper::get_all_attr_values($attrs);
+    $props = self::get_all_attr_values($attrs);
 
     $templateHtml = HTMLUtility::render(
       [
@@ -39,10 +40,10 @@ trait RenderCallbackTrait
         'id' => $block->parsed_block['id'],
         'moduleClassName' => '',
         'name' => $block->block_type->name,
-        'classnamesFunction' => [msGalleryModule::class, 'module_classnames'],
+        'classnamesFunction' => [MGFD_MsGallery::class, 'module_classnames'],
         'moduleCategory' => $block->block_type->category,
-        'stylesComponent' => [msGalleryModule::class, 'module_styles'],
-        'scriptDataComponent' => [msGalleryModule::class, 'module_script_data'],
+        'stylesComponent' => [MGFD_MsGallery::class, 'module_styles'],
+        'scriptDataComponent' => [MGFD_MsGallery::class, 'module_script_data'],
         'children' => $templateHtml
       ]
     );

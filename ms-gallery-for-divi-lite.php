@@ -56,7 +56,12 @@ class MsGalleryForDiviLite
 
 	public static function include()
 	{
-		require_once MGFDL_PLUGIN_DIR . 'divi-5/divi-5.php';
+		$theme = wp_get_theme('Divi');
+		$version = (string) $theme->get('Version');
+
+		if (version_compare($version, '5.0', '>=')) {
+			require_once MGFDL_PLUGIN_DIR . 'divi-5/divi-5.php';
+		}
 	}
 }
 new MsGalleryForDiviLite();
