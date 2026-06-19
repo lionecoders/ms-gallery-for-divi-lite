@@ -18,6 +18,19 @@ use MGFDL\Modules\RESTRegistration;
 $mgfd_module = new MGFD_MsGallery();
 $mgfd_module->load();
 
+// Register block for migration
+add_action(
+  'init',
+  function() {
+    if ( function_exists( 'register_block_type' ) ) {
+      register_block_type(
+        MGFDL_PLUGIN_DIR . 'divi-5/visual-builder/src/modules/ms-gallery-module/block.json'
+      );
+    }
+  },
+  5
+);
+
 // Register REST routes.
 add_action(
   'init',
