@@ -11,7 +11,6 @@ if ( ! defined( 'ABSPATH' ) ) {
     die( 'Direct access forbidden.' );
 }
 
-use ET\Builder\Framework\DependencyManagement\Interfaces\DependencyInterface;
 use ET\Builder\Packages\ModuleLibrary\ModuleRegistration;
 use MGFDL\Modules\msGalleryModule\msGalleryModuleTraits;
 
@@ -20,7 +19,7 @@ use MGFDL\Modules\msGalleryModule\msGalleryModuleTraits;
  *
  * @package MGFD\Modules\msGalleryModule
  */
-class MGFD_MsGallery implements DependencyInterface {
+class MGFD_MsGallery {
 
   use msGalleryModuleTraits\RenderCallbackTrait;
   use msGalleryModuleTraits\RenderContentTrait;
