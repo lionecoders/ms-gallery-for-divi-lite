@@ -14,6 +14,9 @@ if (!defined('ABSPATH')) {
 use MGFDL\Modules\msGalleryModule\MGFD_MsGallery;
 use MGFDL\Modules\RESTRegistration;
 
+// Include block registration for Divi 5 migration
+require_once dirname(__FILE__) . '/msGalleryModule/block-registration.php';
+
 // Load the MS Gallery module
 $mgfd_module = new MGFD_MsGallery();
 $mgfd_module->load();
