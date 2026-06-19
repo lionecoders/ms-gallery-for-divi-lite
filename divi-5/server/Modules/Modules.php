@@ -24,10 +24,12 @@ add_action(
   }
 );
 
+$mgfd_module = new MGFD_MsGallery();
+$mgfd_module->load();
+
 add_action(
   'divi_module_library_modules_dependency_tree',
-  function( $dependency_tree ) {
-
-    $dependency_tree->add_dependency( new MGFD_MsGallery() );
+  function( $dependency_tree ) use ( $mgfd_module ) {
+    $dependency_tree->add_dependency( $mgfd_module );
   }
 );
